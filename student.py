@@ -1,10 +1,8 @@
-# from dbm import _Database
 from itertools import count
 from multiprocessing import parent_process
 from optparse import Values
 from tkinter import*
 from tkinter import ttk
-# from tkinter.tix import COLUMN
 from turtle import bgcolor
 from PIL import Image,ImageTk
 from cv2 import exp
@@ -37,7 +35,7 @@ class Student:
         
 
          # 1 
-        img=Image.open(r"A:\Microsoft Engage\Face Recognition System\college_images\StudentTop.jpg")
+        img=Image.open(r"college_images\StudentTop.jpg")
         img=img.resize((500,130),Image.ANTIALIAS)
         self.photoimg=ImageTk.PhotoImage(img)
 
@@ -45,7 +43,7 @@ class Student:
         f_lbl.place(x=0,y=0,width=500,height=130)
 
         # 2
-        img1=Image.open(r"A:\Microsoft Engage\Face Recognition System\college_images\facialrecognition.png")
+        img1=Image.open(r"college_images\facialrecognition.png")
         img1=img1.resize((500,130),Image.ANTIALIAS)
         self.photoimg1=ImageTk.PhotoImage(img1)
 
@@ -53,7 +51,7 @@ class Student:
         f_lbl.place(x=500,y=0,width=500,height=130)
 
         # 3
-        img2=Image.open(r"A:\Microsoft Engage\Face Recognition System\college_images\attendance matters 2.png")
+        img2=Image.open(r"college_images\attendance matters 2.png")
         img2=img2.resize((600,130),Image.ANTIALIAS)
         self.photoimg2=ImageTk.PhotoImage(img2)
 
@@ -61,7 +59,7 @@ class Student:
         f_lbl.place(x=1000,y=0,width=550,height=130)
 
         # Bg
-        img3=Image.open(r"A:\Microsoft Engage\Face Recognition System\college_images\bg2.jpg")
+        img3=Image.open(r"college_images\bg2.jpg")
         img3=img3.resize((1540,710),Image.ANTIALIAS)
         self.photoimg3=ImageTk.PhotoImage(img3)
 
@@ -78,7 +76,7 @@ class Student:
         Left_frame=LabelFrame(main_frame,bd=2,bg="white",relief=RIDGE,text="Student Details",font=("times new roman",12,"bold"))
         Left_frame.place(x=10,y=10,width=730,height=580)
 
-        img_left=Image.open(r"A:\Microsoft Engage\Face Recognition System\college_images\attendance2.jpeg")
+        img_left=Image.open(r"college_images\attendance2.jpeg")
         img_left=img_left.resize((720,130),Image.ANTIALIAS)
         self.photoimg_left=ImageTk.PhotoImage(img_left)
 
@@ -502,34 +500,8 @@ class Student:
                 messagebox.showinfo("Result","Generating data sets completed!!!")
             except Exception as es:
                 messagebox.showerror("Error",f"Due To:{str(es)}",parent=self.root)
-         
 
 
-
-            
-
-                
-
-
-
-
-
-
-        
-
-
-       
-
- 
-
-
-        
-
-        
-
-         
-        
-       
 if __name__ =="__main__":
       root=Tk()
       obj=Student(root)

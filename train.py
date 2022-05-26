@@ -1,11 +1,10 @@
-# from dbm import _Database
+
 import imp
 from itertools import count
 from multiprocessing import parent_process
 from optparse import Values
 from tkinter import*
 from tkinter import ttk
-# from tkinter.tix import COLUMN
 from turtle import bgcolor
 from PIL import Image,ImageTk
 from cv2 import exp
