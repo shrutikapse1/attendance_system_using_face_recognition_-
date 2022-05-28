@@ -21,6 +21,7 @@ class Face_Recognition_System:
         self.root=root
         self.root.geometry("1530x790+0+0")
         self.root.title("Face Recognition System ")
+        self.root.wm_iconbitmap("favicon.ico")
 
         # 1 
         img=Image.open(r"college_images\attendance.jpg")
