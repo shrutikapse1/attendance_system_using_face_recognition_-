@@ -9,6 +9,7 @@ class Developer:
         self.root=root
         self.root.geometry("1530x790+0+0")
         self.root.title("")
+        self.root.wm_iconbitmap("favicon.ico")
 
         title_lbl=Label(self.root,text="Developer ",font=("times new roman",35,"bold"),bg="white",fg="Blue")
         title_lbl.place(x=0,y=0,width=1540,height=45)
